@@ -38,7 +38,8 @@ start the sever and you can see page's in webBrowser
   WebStrom - this is good
 * ## OS
   Windows 
-  ### note you need install nodeJs first Here is the install guide https://nodejs.org/en/
+  ### note you need install nodeJs first to Use npm command ([Node Package Manger](https://www.npmjs.com/))
+  ### Here is the install guide https://nodejs.org/en/
   
   
 
