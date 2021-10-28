@@ -33,5 +33,12 @@ start the sever and you can see page's in webBrowser
   A lib in Three.js allow you to Render a html element in 3D sence.  
   Doc:https://threejs.org/docs/?q=css#examples/en/renderers/CSS3DRenderer
   
+# 3. Tool and Enviorment
+* ## Tool  
+  WebStrom - this is good
+* ## OS
+  Windows 
+  ### note you need install nodeJs first Here is the install guide https://nodejs.org/en/
+  
   
 
