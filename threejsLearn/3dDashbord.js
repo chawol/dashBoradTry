@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import {CSS3DObject, CSS3DRenderer} from 'three/examples/jsm/renderers/CSS3DRenderer';
 import {TrackballControls} from 'three/examples/jsm/controls/TrackballControls'
 import {TWEEN} from 'three/examples/jsm/libs/tween.module.min';
+import $ from 'jquery'
 
 const table = [
   'H', 'Hydrogen', '1.00794', 1, 1,
@@ -123,13 +124,19 @@ const table = [
   'Ts', 'Tennessine', '(294)', 17, 7,
   'Og', 'Oganesson', '(294)', 18, 7
 ];
+var priceData = [];
 let camera, scene, renderer;
 let controls;
 
 const objects = [];
 const targets = {table: [], sphere: [], helix: [], grid: []};
-init();
-animate();
+// init();
+
+$.get('http://localhost:5000', (data) => {
+  priceData = JSON.parse(data)
+  init();
+  animate();
+})
 
 function init() {
 
@@ -165,7 +172,7 @@ function init() {
     const valueTest = document.createElement('div');
     valueTest.id = `${table[i]}input`
     valueTest.className = 'price'
-    valueTest.textContent=`id:${table[i]}input`
+    valueTest.textContent = `Price: ${priceData[i / 5]['Price'] !== 'price unknown' ? priceData[i / 5]['Price'] + ' Usd/Kg' : 'UnKnown'}`
     details.appendChild(valueTest)
 
     const objectCSS = new CSS3DObject(element);
