@@ -37,6 +37,9 @@ start the sever and you can see page's in webBrowser
 * ## CSS3DRenderer 
   A lib in Three.js allow you to Render a html element in 3D sence.  
   Doc:https://threejs.org/docs/?q=css#examples/en/renderers/CSS3DRenderer
+* ## Jquery  
+  We need Some Ajax Request to get Price from backend with Jquery will make this much easy .
+  Doc(get Function):https://api.jquery.com/jquery.get/
   
 # 3. Tool and Enviorment
 * ## Tool  
