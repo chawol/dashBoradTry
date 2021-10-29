@@ -5,8 +5,13 @@ And this is my first Three.js pratice
 
 originate from https://threejs.org/examples/css3d_periodictable.html
 and Try to build a 3D Dashbord 
+## Update log  
+Add Price Value on Card to show How Css3Dobject work with Html And JavaScript  
+### due To this Price Value we Need A backEndServer we use Flask here
+### Here is the Url For BackEndServr [Flask Backend](https://github.com/chawol/FlaskAndCraw)
 
 # 1. How to use?
+#### Make Sure you start The BackEndSever Above
 `cd threejsLearn`
 this is the first pratice maybe there will be much more afterDays
 
@@ -32,6 +37,9 @@ start the sever and you can see page's in webBrowser
 * ## CSS3DRenderer 
   A lib in Three.js allow you to Render a html element in 3D sence.  
   Doc:https://threejs.org/docs/?q=css#examples/en/renderers/CSS3DRenderer
+* ## Jquery  
+  We need Some Ajax Request to get Price from backend with Jquery will make this much easy .
+  Doc(get Function):https://api.jquery.com/jquery.get/
   
 # 3. Tool and Enviorment
 * ## Tool  
